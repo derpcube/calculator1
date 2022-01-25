@@ -13,7 +13,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func didTapButtion() {
+        performSegue(withIdentifier: "segue1", sender: self)
+    }
+    
+    @IBAction func didTapButton2() {
+        performSegue(withIdentifier: "segue2", sender: self)
+    }
+    
+    @IBAction func didTapButton3() {
+        performSegue(withIdentifier: "segue3", sender: self)
+    }
 }
 

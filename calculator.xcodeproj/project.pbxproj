@@ -14,6 +14,9 @@
 		3F538DD5278F19A400BEE233 /* calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F538DD3278F19A400BEE233 /* calculator.xcdatamodeld */; };
 		3F538DD7278F19A600BEE233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F538DD6278F19A600BEE233 /* Assets.xcassets */; };
 		3F538DDA278F19A600BEE233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F538DD8278F19A600BEE233 /* LaunchScreen.storyboard */; };
+		3F538DE2278F1B2F00BEE233 /* calculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F538DE1278F1B2F00BEE233 /* calculatorViewController.swift */; };
+		3F538DE4278F1B4200BEE233 /* MortgageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F538DE3278F1B4200BEE233 /* MortgageViewController.swift */; };
+		3F538DE6278F1B4B00BEE233 /* bmiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F538DE5278F1B4B00BEE233 /* bmiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		3F538DD6278F19A600BEE233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F538DD9278F19A600BEE233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F538DDB278F19A600BEE233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F538DE1278F1B2F00BEE233 /* calculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorViewController.swift; sourceTree = "<group>"; };
+		3F538DE3278F1B4200BEE233 /* MortgageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageViewController.swift; sourceTree = "<group>"; };
+		3F538DE5278F1B4B00BEE233 /* bmiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bmiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,9 @@
 				3F538DCA278F19A400BEE233 /* AppDelegate.swift */,
 				3F538DCC278F19A400BEE233 /* SceneDelegate.swift */,
 				3F538DCE278F19A400BEE233 /* ViewController.swift */,
+				3F538DE1278F1B2F00BEE233 /* calculatorViewController.swift */,
+				3F538DE3278F1B4200BEE233 /* MortgageViewController.swift */,
+				3F538DE5278F1B4B00BEE233 /* bmiViewController.swift */,
 				3F538DD0278F19A400BEE233 /* Main.storyboard */,
 				3F538DD6278F19A600BEE233 /* Assets.xcassets */,
 				3F538DD8278F19A600BEE233 /* LaunchScreen.storyboard */,
@@ -142,7 +151,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F538DCF278F19A400BEE233 /* ViewController.swift in Sources */,
+				3F538DE6278F1B4B00BEE233 /* bmiViewController.swift in Sources */,
 				3F538DD5278F19A400BEE233 /* calculator.xcdatamodeld in Sources */,
+				3F538DE4278F1B4200BEE233 /* MortgageViewController.swift in Sources */,
+				3F538DE2278F1B2F00BEE233 /* calculatorViewController.swift in Sources */,
 				3F538DCB278F19A400BEE233 /* AppDelegate.swift in Sources */,
 				3F538DCD278F19A400BEE233 /* SceneDelegate.swift in Sources */,
 			);
