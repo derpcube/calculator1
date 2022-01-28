@@ -21,61 +21,60 @@ class bmiViewController: UIViewController {
     @IBOutlet weak var weight: UITextField!
     @IBOutlet weak var height: UITextField!
     @IBOutlet weak var result: UILabel!
+    @IBOutlet weak var weightlab: UILabel!
+    @IBOutlet weak var heightlab: UILabel!
     
     @IBAction func system(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex
         {
         case 0:
             Imperial = true
-            weight.text = "Weight (lbs):"
-            height.text = "Height (in):"
+            weightlab.text = "Weight (lbs):"
+            heightlab.text = "Height (in):"
         case 1:
             Imperial = false
-            weight.text = "Weight (kg)"
-            height.text = "Height (m)"
+            weightlab.text = "Weight (kg):"
+            heightlab.text = "Height (m):"
         default:
             Imperial = true
-            weight.text = "Weight (lbs):"
-            height.text = "Height (in):"
+            weightlab.text = "Weight (lbs):"
+            heightlab.text = "Height (in):"
         }
     }
     
     @IBAction func calculate(_ sender: Any)
     {
-        if (Imperial)
-        {
-            Result = 703 * (Int(weight.text) / (Int(height.text) * Int(height.text)))
-        }
-        else
-        {
-            Result = Int(weight.text)/(Int(height.text) * Int(height.text))
+        if let weightRes = Double(weight.text!) {
+            if let heightRes = Double(height.text!) {
+                if (Imperial)
+                {
+                    Result = 703 * (weightRes/(heightRes * heightRes))
+                }
+                else
+                {
+                    Result = weightRes/(heightRes * heightRes)
+                }
+            }
         }
         
-        if (Result < 18.5)
+        let roundedResult = (Result * 1000).rounded() / 1000
+        
+        
+        if (roundedResult < 18.5)
         {
-            result.text = "Your result is: \(Result). Underweight"
+            result.text = "Your result is \(roundedResult). Underweight"
         }
-        else if (Result < 24.9)
+        else if (roundedResult > 18.5 && roundedResult < 24.9)
         {
-            result.text = "Your result is \(Result). Normal Weight"
+            result.text = "Your result is \(roundedResult). Healthy."
         }
-        else if (Result < 29.9)
+        else if (roundedResult > 25.0 && roundedResult < 29.9)
         {
-            result.text = "Your result is \(Result). Overweight."
+            result.text = "Your result is \(roundedResult). Overweight."
         }
-        else if (Result < 34.9)
+        else if (roundedResult > 30.0)
         {
-            result.text = "Your result is \(Result). Obesity class 1"
-        }
-        else if (Result < 39.9)
-        {
-            result.text = "Your result is \(Result). Obesity class 2"
-        }
-        else if (Result > 40)
-        {
-            result.text = "Your result is \(Result). Obesity class 3."
+            result.text = "Your result is \(roundedResult). Obese."
         }
     }
-    
-    
 }
