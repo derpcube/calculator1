@@ -27,7 +27,9 @@
                                 <rect key="frame" x="108" y="303" width="198" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Basic Calculator"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Basic Calculator">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapButtion" destination="BYZ-38-t0r" eventType="touchUpInside" id="W92-90-xTE"/>
                                     <segue destination="LOr-lk-xxW" kind="popoverPresentation" identifier="segue1" popoverAnchorView="vdt-8G-qbn" id="f7Z-NE-O9I">
@@ -39,7 +41,9 @@
                                 <rect key="frame" x="108" y="490" width="198" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Mortgage Calculator"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Mortgage Calculator">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapButton2" destination="BYZ-38-t0r" eventType="touchUpInside" id="f0f-t8-aZ9"/>
                                     <segue destination="pBn-OT-b0f" kind="popoverPresentation" identifier="segue2" popoverAnchorView="vKF-8l-1jI" id="dns-PU-gta">
@@ -51,7 +55,9 @@
                                 <rect key="frame" x="108" y="669" width="198" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="BMI Calculator"/>
+                                <buttonConfiguration key="configuration" style="filled" title="BMI Calculator">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapButton3" destination="BYZ-38-t0r" eventType="touchUpInside" id="y4g-hQ-7fG"/>
                                     <segue destination="80t-hd-0Tz" kind="popoverPresentation" identifier="segue3" popoverAnchorView="YsW-Kt-QQu" id="y3n-gr-GNs">

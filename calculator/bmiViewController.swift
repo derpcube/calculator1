@@ -52,7 +52,7 @@ class bmiViewController: UIViewController {
                 }
                 else
                 {
-                    Result = weightRes/(heightRes * heightRes)
+                    Result = (weightRes)/((heightRes/10) * (heightRes/10)) * 100
                 }
             }
         }
@@ -62,19 +62,19 @@ class bmiViewController: UIViewController {
         
         if (roundedResult < 18.5)
         {
-            result.text = "Your result is \(roundedResult). Underweight"
+            result.text = "Your result is \(roundedResult), underweight"
         }
         else if (roundedResult > 18.5 && roundedResult < 24.9)
         {
-            result.text = "Your result is \(roundedResult). Healthy."
+            result.text = "Your result is \(roundedResult), healthy."
         }
         else if (roundedResult > 25.0 && roundedResult < 29.9)
         {
-            result.text = "Your result is \(roundedResult). Overweight."
+            result.text = "Your result is \(roundedResult), overweight."
         }
         else if (roundedResult > 30.0)
         {
-            result.text = "Your result is \(roundedResult). Obese."
+            result.text = "Your result is \(roundedResult), obese."
         }
     }
 }
